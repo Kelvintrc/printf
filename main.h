@@ -1,5 +1,5 @@
-#ifndef _HOLBERTON_H_
-#define _HOLBERTON_H_
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 #include <stdarg.h>
 #include <unistd.h>
@@ -29,6 +29,7 @@ int print_oct(va_list arguments, char *buf, unsigned int ibuf);
 int print_hex(va_list arguments, char *buf, unsigned int ibuf);
 int print_upx(va_list arguments, char *buf, unsigned int ibuf);
 int print_usr(va_list arguments, char *buf, unsigned int ibuf);
+int print_add(va_list arguments, char *buf, unsigned int ibuf);
 int (*get_print_func(char s))(va_list, char *, unsigned int);
 unsigned int handl_buf(char *buf, char c, unsigned int ibuf);
 int print_buf(char *buf, unsigned int nbuf);
