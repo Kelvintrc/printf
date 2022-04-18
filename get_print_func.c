@@ -1,5 +1,4 @@
 #include "main.h"
-#include "main.h"
 
 /**
  * get_print_func - selects the correct function to perform the operation.
@@ -14,6 +13,12 @@ int (*get_print_func(char s))(va_list, char *, unsigned int)
 		{"s", print_str},
 		{"i", print_int},
 		{"d", print_int},
+		{"b", print_bnr},
+		{"u", print_unt},
+		{"o", print_oct},
+		{"x", print_hex},
+		{"X", print_upx},
+		{"S", print_usr},
 		{NULL, NULL},
 	};
 	int i = 0;
