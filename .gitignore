@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#Ignore main file
-*main.c
